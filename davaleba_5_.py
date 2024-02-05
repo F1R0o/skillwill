@@ -6,14 +6,15 @@ class PersonMixin:
 
 
 class Person:
-    def __init__(self, name, surname):
+    def __init__(self, name, surname,age):
         self.name = name
         self.surname = surname
+        self.age = age
 
 class Student(Person,PersonMixin):
-    def __init__(self, university, name, surname):
+    def __init__(self, university, name, surname,age):
         self.university = university
-        super().__init__(name, surname)
+        super().__init__(name, surname,age)
 
 
 
@@ -22,5 +23,5 @@ class Student(Person,PersonMixin):
 
 
 
-student1 = Student("sadme","luka","firuashvili")
+student1 = Student("sadme","luka","firuashvili",20)
 student1.display_attributes()
