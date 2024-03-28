@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Car</title>
+</head>
+<body>
+    <h2>Add Car</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form}}
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

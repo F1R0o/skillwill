@@ -1,0 +1,7 @@
+
+
+<ul>
+    {% for car in cars %}
+        <li><a href="{% url 'car_by_id' car.id %}">{{ car }}</a></li>
+    {% endfor %}
+</ul>
